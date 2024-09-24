@@ -4,3 +4,4 @@ Typescript
 Framer-motion
 Lenis
 fortawesome
+react-icons

@@ -1,18 +1,25 @@
-import React from 'react'
+
 // import { Link } from 'react-scroll'
 // import { useOnInView } from '/utils/useOnInView'
-import { motion } from 'framer-motion'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClose } from '@fortawesome/free-solid-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import {motion} from 'framer-motion'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faClose} from '@fortawesome/free-solid-svg-icons'
+import {library} from '@fortawesome/fontawesome-svg-core'
+
 library.add(faClose)
 
-const MobileNav = ({ navItems, theme, handleMobileMenu }) => {
+const MobileNav = ({navItems, handleMobileMenu}: {
+    navItems: Array<{
+        name: string;
+        link: string;
+        key: string;
+    }>, handleMobileMenu: never
+}) => {
     // animation refs & controls
     // const { ref: navRef, controls: navControls } = useOnInView()
 
     const textStyle =
-        theme === 'brad' &&
+
         'font-mono font-normal font-extrabold text-[20px] no-underline hover:no-underline'
 
     return (
@@ -25,7 +32,7 @@ const MobileNav = ({ navItems, theme, handleMobileMenu }) => {
                 className='absolute top-0 right-2 p-2 text-wolvesFrost'
                 onClick={handleMobileMenu}
             >
-                <FontAwesomeIcon icon={faClose} className='w-5' />
+                <FontAwesomeIcon icon={faClose} className='w-5'/>
             </button>
             <ul className='show mx-auto my-auto flex max-w-6xl flex-col items-center justify-around sm:hidden'>
                 {navItems.map((item) => (
@@ -34,7 +41,7 @@ const MobileNav = ({ navItems, theme, handleMobileMenu }) => {
                         className={`${textStyle} cursor-pointer py-[12px] uppercase text-wolvesFrost`}
                     >
                         <a href={item.link} onClick={handleMobileMenu}>
-                            {item.name}
+                            {`#${item.link}`}
                         </a>
                     </li>
                 ))}

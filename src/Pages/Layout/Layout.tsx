@@ -1,8 +1,7 @@
-import {Outlet} from "react-router-dom";
 import {useState} from "react";
 import Nav from "./Components/Nav.tsx";
 
-export default function Layout(){
+export default function Layout() {
 
     const navItems = [
         {
@@ -10,9 +9,9 @@ export default function Layout(){
             link: 'home',
             key: '01.',
         },
-        { name: 'about', link: 'about', key: '02.' },
-        { name: 'work', link: 'work', key: '03.' },
-        { name: 'contact', link: 'contact', key: '04.' },
+        {name: 'about', link: 'about', key: '02.'},
+        {name: 'work', link: 'work', key: '03.'},
+        {name: 'contact', link: 'contact', key: '04.'},
     ]
     const fonts = {
         accent: 'text-[#05BFDB] text-sm font-mono',
@@ -24,7 +23,7 @@ export default function Layout(){
 
     const [active, setActive] = useState(navItems[0].name)
 
-    return(
+    return (
         <div>
             <Nav
                 fonts={fonts}
