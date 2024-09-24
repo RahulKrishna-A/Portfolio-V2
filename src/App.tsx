@@ -2,6 +2,7 @@ import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "./Pages/Layout/Layout.tsx";
 import { ReactLenis } from "@studio-freight/react-lenis";
+import Home from "./Pages/Home/Home.tsx";
 function App() {
 
     const lenisOptions = {
@@ -18,7 +19,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route element={<Layout/>}>
-                        {/*<Route path={"/"} element={<Home/>}></Route>*/}
+                        <Route path={"/"} element={<Home/>}></Route>
                     </Route>
                 </Routes>
             </BrowserRouter>

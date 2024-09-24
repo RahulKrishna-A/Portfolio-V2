@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import React from 'react'
+import MobileNav from "./MobileNav.tsx";
 // import MobileNav from './MobileNav'
 library.add(faBars)
 
@@ -134,11 +134,11 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
                     className='flex w-6 items-center justify-center'
                 />
             </button>
-            {1 + 1 == 3 && showMobile && (
+            {showMobile && (
                 <MobileNav
                     navItems={navItems}
                     handleMobileMenu={handleMobileMenu}
-                    theme='brad'
+
                 />
             )}
         </nav>
