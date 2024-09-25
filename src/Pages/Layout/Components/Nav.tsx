@@ -56,7 +56,7 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
     }
 
     return (
-        <nav className=' cursor-none fixed z-40 flex w-full h-[4rem] items-center justify-between bg-[#0B192E] py-6 px-[40px]'>
+        <nav className='  fixed z-40 flex w-full h-[4rem] items-center justify-between bg-[#0B192E] py-6 px-[40px]'>
             <div
                 className={fonts.accent}
                 style={{
@@ -69,18 +69,18 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
                 variants={motionContainer}
                 initial='hidden'
                 animate='show'
-                className='hidden max-w-6xl flex-row gap-4 px-2 sm:visible sm:flex cursor-none'
+                className='hidden max-w-6xl flex-row gap-4 px-2 sm:visible sm:flex '
             >
                 {navItems.map((item) => (
                     <a
                         onClick={() => setActive(item.link)}
                         key={item.name}
-                        className='relative py-1 text-white transition-all hover:no-underline cursor-none'
+                        className='relative py-1 text-white transition-all hover:no-underline '
                         href={`#${item.link}`}
                     >
                         <motion.li
                             variants={child}
-                            className={`${fonts.accent} font-sans no-underline hover:no-underline hover:cursor-none px-4`}
+                            className={`${fonts.accent} font-sans no-underline hover:no-underline hover: px-4`}
                             style={{
                                 fontSize: 'clamp(10px, 1.5vw, 14px)',
                             }}
