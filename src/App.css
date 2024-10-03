@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
 }
 
 html {
@@ -22,6 +23,14 @@ html {
 a {
   color: #05bfdb;
   cursor: default;
+}
+
+.blue{
+  color: #05bfdb;
+}
+
+.tilebg{
+  background-color: rgba(5, 191, 219, 0.28);
 }
 
 /* section {

@@ -25,7 +25,7 @@ const MobileNav = ({navItems, handleMobileMenu}: {
     return (
         <motion.nav
             // ref={navRef}
-            className='z-front absolute fixed bg-[#0B192E] top-10 left-0 w-full flex h-full items-center justify-center bg-wolvesMidnight p-12 font-futuraCond text-3xl font-extrabold uppercase italic tracking-wider text-wolvesFrost'
+            className='z-front   fixed bg-[#0B192E] top-10 left-0 w-full flex h-full items-center justify-center  p-8 font-futuraCond text-2xl font-extrabold uppercase italic tracking-wider text-wolvesFrost'
             initial='hidden'
         >
             <button
@@ -40,8 +40,8 @@ const MobileNav = ({navItems, handleMobileMenu}: {
                         key={item.name}
                         className={`${textStyle} cursor-pointer py-[12px] uppercase text-wolvesFrost`}
                     >
-                        <a href={item.link} onClick={handleMobileMenu}>
-                            {`#${item.link}`}
+                        <a href={`#${item.link}`} onClick={handleMobileMenu}>
+                            {item.name}
                         </a>
                     </li>
                 ))}

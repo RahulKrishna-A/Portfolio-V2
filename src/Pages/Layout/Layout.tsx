@@ -36,7 +36,7 @@ export default function Layout() {
 
     return (
         <ActiveContext.Provider value={{active, setActive}}>
-            <div>
+            <div >
                 <Nav
                     fonts={fonts}
                     navItems={navItems}
