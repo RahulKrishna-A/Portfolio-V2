@@ -8,7 +8,7 @@ const About = ({fonts}: {
 }) => {
     return (
         <div className='flex flex-col gap-4 min-h-screen justify-center'>
-            <NumberedHeading number={'02.'} title={'About Me'}/>
+            <NumberedHeading number={'01.'} title={'About Me'}/>
             <motion.div
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}
@@ -18,7 +18,7 @@ const About = ({fonts}: {
             >
                 <div className='flex flex-col sm:flex-row gap-4'>
                     <div className='flex flex-col gap-2 max-w-[600px] text-sm sm:text-xl leading-relaxed tracking-[.01rem] sm:gap-3'>
-                        <p className='font-light'>
+                        <p className='font-light text-[18px]'>
                             Hey there! My name is Rahul and I enjoy creating things that live on the internet.
                             I've had the privilege of working with various high-growth <a
                             href="https://www.hosaksham.com"
@@ -29,13 +29,13 @@ const About = ({fonts}: {
                             into <a>user
                             perception</a> .
                         </p>
-                        <p className='font-light'>
+                        <p className='font-light text-[18px]'>
                             I occasionally write technical blogs <a
                             href="https://medium.com/@rahulkrishna28"
                             className={"cursor-pointer underline underline-offset-4"} target="_blank"
                             rel="noopener">here</a>.
                         </p>
-                        <p className='font-light'>
+                        <p className='font-light text-[18px]'>
                             Here are a few technologies I’ve been working with recently:
                         </p>
 

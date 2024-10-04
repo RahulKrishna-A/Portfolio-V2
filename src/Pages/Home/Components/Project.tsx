@@ -1,5 +1,8 @@
 import {FiExternalLink, FiGithub,} from 'react-icons/fi'
 import NumberedHeading from "./NumberedHeading.tsx";
+import cashflow from "../../../assets/Cashflow.png"
+import gestureLock from "../../../assets/GestureLock.png"
+import resumeBuilder from "../../../assets/ResumeBuilder.png"
 
 
 const Projects = ({fonts}: {
@@ -7,7 +10,7 @@ const Projects = ({fonts}: {
 }) => {
     const projects = [
         {
-            image: single,
+            image: cashflow,
             title: 'Single Game Tickets LP',
             id: 'sgt',
             description:
@@ -16,7 +19,7 @@ const Projects = ({fonts}: {
             link: 'https://www.nba.com/timberwolves/single',
         },
         {
-            image: city,
+            image: gestureLock,
             id: 'city',
             title: "'23 City Edition LP",
             description:
@@ -25,7 +28,7 @@ const Projects = ({fonts}: {
             link: 'https://www.nba.com/timberwolves/lakelife',
         },
         {
-            image: classic,
+            image: resumeBuilder,
             id: 'classic',
             title: "'23 Classic Edition LP",
             description:
@@ -33,51 +36,7 @@ const Projects = ({fonts}: {
             techStack: ['NextJS', 'Tailwind', 'Framer Motion'],
             link: 'https://www.nba.com/timberwolves/classic',
         },
-        {
-            image: behere,
-            id: 'behere',
-            title: 'Be Here',
-            description:
-                'I designed and built a fan-focused social media experience in our app. It integrates posts from Instagram and Twitter to help folks understand the excitement of being at Target Center for a game.',
-            techStack: ['NextJS', 'Figma', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/app/behere',
-        },
-        {
-            image: howler,
-            id: 'howler',
-            title: 'Howler',
-            description:
-                'Sometimes folks just want to have fun. Inspired by the real-life, fan-favorite Howler giveaway item, I created a virtual Howler for fans who missed the giveaway to use in their Timberwolves app.',
-            techStack: ['NextJS', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/app/howl',
-        },
-        {
-            image: playoffs,
-            id: 'playoffs',
-            title: 'Playoffs Hub',
-            description:
-                "I built a flexible, dynamic page that served as the public's one-stop shop for tickets, content, and scores during the Timberwolves' playoff run to the Western Conference Championship.",
-            techStack: ['NextJS', 'Tailwind', 'APIs'],
-            link: 'https://www.nba.com/timberwolves/playoffs',
-        },
-        {
-            image: jaden,
-            id: 'badnight',
-            title: 'All-Defense Campaign',
-            description:
-                "Minnesota Timberwolves forward Jaden McDaniels loves making the NBA's best players have a 'bad night.' This microsite, built to encourage his inclusion on the All-Defensive team, takes that quote and runs with it.",
-            techStack: ['NextJS', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/badnight',
-        },
-        {
-            image: community,
-            id: 'community',
-            title: 'Community Hub',
-            description:
-                'I redesigned and rebuilt the web presence for the Timberwolves and Lynx Community Impact team. The new look and feel prioritizes organization and imagery, capturing the human connections and joy this team brings to the Twin Cities community.',
-            techStack: ['NextJS', 'Figma', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/community',
-        },
+
 
     ]
     return (
@@ -161,9 +120,7 @@ const Projects = ({fonts}: {
                         className='flex flex-col lg:grid lg:grid-cols-10 text-white'
                     >
                         {i % 2 !== 0 ? (
-                            <div
-                                className={`relative col-span-6 aspect-video z-3 rounded-xl `}
-                            >
+                            <div className={`relative col-span-6 aspect-video z-10 rounded-xl`}>
                                 <a
                                     href={project.link}
                                     target='_blank'
@@ -172,56 +129,25 @@ const Projects = ({fonts}: {
                                     <img
                                         src={project.image}
                                         alt='image'
-                                        className='hover:translate-x-2 hover:translate-y-2 transition ease-in-out rounded-lg'
-                                        fill
+                                        className='hover:translate-x-2 hover:translate-y-2 transition ease-in-out rounded-lg z-20 relative shadow-md  shadow-[]' // Added hover shadow effect
                                     />
                                 </a>
-                                <div className='bg-[#05BFDB] h-full w-full rounded-xl'/>
                             </div>
                         ) : null}
                         <div
-                            className={`py-4 col-span-4 ${
-                                i % 2 !== 0 ? 'items-end' : 'items-start'
-                            }`}
+                            className={`py-4 col-span-4 ${i % 2 !== 0 ? 'items-end' : 'items-start'}`}
                         >
                             <div
-                                className={`flex flex-col gap-4 ${
-                                    i % 2 !== 0 ? 'items-end' : 'items-start'
-                                } h-[80%] w-full`}
+                                className={`flex flex-col gap-4 ${i % 2 !== 0 ? 'items-end' : 'items-start'} h-[80%] w-full`}
                             >
-                                <div
-                                    className={`flex flex-col gap-1 ${
-                                        i % 2 !== 0 ? 'items-end' : 'items-start'
-                                    }`}
-                                >
+                                <div className={`flex flex-col gap-1 ${i % 2 !== 0 ? 'items-end' : 'items-start'}`}>
                                     <div className={fonts.accent}>Featured Project</div>
                                     <div className={`${fonts.primaryHeading} text-2xl`}>
                                         {project.title}
                                     </div>
                                 </div>
-                                {i % 2 !== 0 ? (
-                                    <div
-                                        className={`relative col-span-6 aspect-video z-3 rounded-xl `}
-                                    >
-                                        <a
-                                            href={project.link}
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                        >
-                                            <img
-                                                src={project.image}
-                                                alt='image'
-                                                className='hover:translate-x-2 hover:translate-y-2 transition ease-in-out rounded-lg'
-
-                                            />
-                                        </a>
-                                        <div className='bg-[#05BFDB] h-full w-full rounded-xl'/>
-                                    </div>
-                                ) : null}
                                 <div
-                                    className={`${fonts.base} w-full lg:w-[110%] ${
-                                        i % 2 !== 0 ? 'text-right' : 'text-left'
-                                    } z-20 bg-[#011f38] p-6 aspect-4/5 rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem]`}
+                                    className={`${fonts.base} w-full lg:w-[110%] ${i % 2 !== 0 ? 'text-right' : 'text-left'} z-20 bg-[#011f38] p-6 aspect-4/5 rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem]`}
                                 >
                                     {project.description}
                                 </div>
@@ -233,7 +159,7 @@ const Projects = ({fonts}: {
                                 <div className='flex flex-row gap-6'>
                                     {project.github ? (
                                         <a
-                                            className='text-gray-200 hover:text-[#05BFDB] '
+                                            className='text-gray-200 hover:text-[#05BFDB] cursor-none'
                                             aria-label='GitHub'
                                             title='GitHub'
                                             target='_blank'
@@ -245,7 +171,7 @@ const Projects = ({fonts}: {
                                     ) : null}
                                     {project.link ? (
                                         <a
-                                            className='text-gray-200 hover:text-[#05BFDB] '
+                                            className='text-gray-200 hover:text-[#05BFDB] cursor-none'
                                             aria-label='External Link'
                                             title='External Link'
                                             target='_blank'
@@ -258,23 +184,19 @@ const Projects = ({fonts}: {
                                 </div>
                             </div>
                         </div>
-                        {i % 2 == 0 ? (
-                            <div
-                                className={`relative col-span-6 aspect-video z-3 rounded-xl `}
-                            >
+                        {i % 2 === 0 ? ( // Ensure only one image is rendered in the odd index
+                            <div className={`relative col-span-6 aspect-video z-10 rounded-xl`}>
                                 <a
                                     href={project.link}
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
-                                    <img
+                                   <img
                                         src={project.image}
                                         alt='image'
-                                        className='hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out rounded-lg'
-
+                                        className='hover:translate-x-2 hover:translate-y-2 transition ease-in-out rounded-lg z-20 relative shadow-md  shadow-[]' // Added hover shadow effect
                                     />
                                 </a>
-                                <div className='bg-[#05BFDB] h-full w-full rounded-xl'/>
                             </div>
                         ) : null}
                     </div>

@@ -7,6 +7,7 @@ import Contact from "./Components/Contact.tsx";
 import { useContext } from "react"; // Add this import
 import { ActiveContext } from "../Layout/Layout"
 import Work from "./Components/Work.tsx";
+import Projects from "./Components/Project.tsx";
 
 
 
@@ -62,12 +63,20 @@ const { setActive } = useContext(ActiveContext);
             <About fonts={fonts}/>
         </section>
         <section
-            id='work'
+            id='experience'
 
             className='sectionObserve mt-[1px] min-h-[800px] sm:h-full w-full bg-[#0B192E] px-[2rem] sm:px-[5%] lg:px-[15%]'
         >
             <Work fonts={fonts}/>
             {/*<Projects fonts={fonts}/>*/}
+        </section>
+            <section
+            id='work'
+
+            className='sectionObserve mt-[1px] min-h-[800px] sm:h-full w-full bg-[#0B192E] px-[2rem] sm:px-[5%] lg:px-[15%]'
+        >
+
+            <Projects fonts={fonts}/>
         </section>
         <section
             id='contact'

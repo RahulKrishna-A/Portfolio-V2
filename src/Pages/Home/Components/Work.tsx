@@ -10,7 +10,7 @@ export default function Work({fonts}: {
 
     return (
         <div>
-            <NumberedHeading number={'03.'} title={"Where I've Worked"}/>
+            <NumberedHeading number={'02.'} title={"Where I've Worked"}/>
             <motion.div
                 initial={{opacity: 0, y: 30}}
                 whileInView={{opacity: 1, y: 0}}

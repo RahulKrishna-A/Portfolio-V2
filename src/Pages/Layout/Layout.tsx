@@ -13,12 +13,9 @@ export default function Layout() {
 
 
     const navItems = [
-        {
-            name: 'home',
-            link: 'home',
-            key: '01.',
-        },
-        {name: 'about', link: 'about', key: '02.'},
+
+        {name: 'about', link: 'about', key: '01.'},
+        {name: 'experience', link: 'experience', key: '02.'},
         {name: 'work', link: 'work', key: '03.'},
         {name: 'contact', link: 'contact', key: '04.'},
     ]
