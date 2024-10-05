@@ -11,36 +11,37 @@ const Projects = ({fonts}: {
     const projects = [
         {
             image: cashflow,
-            title: 'Single Game Tickets LP',
-            id: 'sgt',
+            title: 'CashFlow',
+            id: 'cash',
             description:
-                'I redesigned and rebuilt our Single Game Tickets landing page, the primary point of sales for Timberwolves tickets. The overhauled site, with its clean interface and robust features, facilitated an impressive 66% year-over-year increase in ticket sales.',
-            techStack: ['NextJS', 'Tailwind', 'APIs'],
-            link: 'https://www.nba.com/timberwolves/single',
+                'CashFlow. A webapp simulating virtual money transfers online, along with User authentication, utilises sessions to ensure Atomicity and Isolation in Transactions. Follows \'Fixed-point\' representation to eliminate decimal errors in DBs.',
+            techStack: ['ReactJS', 'NodeJS', 'Express','MongoDB','tailwindcss','JWT'],
+            link: 'https://cash-flow-rahul.vercel.app/',
+            github: "https://github.com/RahulKrishna-A/CashFlow"
         },
         {
             image: gestureLock,
-            id: 'city',
-            title: "'23 City Edition LP",
-            description:
-                'This landing page was the web component of a Hashtag Sports Award-nominated marketing campaign. Using animated SVGs and subtle gradients, it celebrates a uniform inspired by the summertime fun that can only be found in the Land of 10,000 Lakes.',
-            techStack: ['NextJS', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/lakelife',
+            id: 'gesture',
+            title: "Gesture Based Digit Detection",
+            description: 'Developed GestureLock , employing Google\'s MediaPipe library for precise hand gesture recognition, with a specific emphasis on recognizing digits 1 to 5. The application introduces gesture-based authentication and CAPTCHA using hand landmarks.',
+            techStack: ['Javascript', 'MediaPipe', 'HTML','CSS'],
+            link: 'https://rahulkrishna-a.github.io/GestureAIlock-MachineLearning_Powered_Hand_Gesture_Password_Detection/',
+            github: "https://github.com/RahulKrishna-A/GestureAIlock-MachineLearning_Powered_Hand_Gesture_Password_Detection"
         },
         {
             image: resumeBuilder,
-            id: 'classic',
-            title: "'23 Classic Edition LP",
-            description:
-                "Featuring a trailing mouse cursor and clever pop-ups, this landing page puts a modern twist on 90's web design to unveil the Timberwolves' 35th Anniversary Classic Edition Uniforms.",
-            techStack: ['NextJS', 'Tailwind', 'Framer Motion'],
-            link: 'https://www.nba.com/timberwolves/classic',
+            id: 'resumeb',
+            title: "Real-time Weather Application",
+            description:"A web App for Resume Generation using ReactJS and CSS to facilitate the seamless creation of professional resume. Implemented a user-friendly interface that allows users to effortlessly download resumes in PDF format.",
+            techStack: ['ReactJs', 'CSS'],
+            link: 'https://resume-builder-rahul.netlify.app/',
+            github:"https://github.com/RahulKrishna-A/ResumeBuilder"
         },
 
 
     ]
     return (
-        <div className='flex flex-col min-h-screen justify-center py-40'>
+        <div className='group flex flex-col min-h-screen justify-center mt-20'>
             <NumberedHeading number='.03' title="Things I've Built"/>
 
             {/* mobile screens */}
@@ -70,11 +71,11 @@ const Projects = ({fonts}: {
                                     </a>
                                 </div>
                                 <div
-                                    className={`${fonts.base} w-full z-20 bg-[#011f38] p-6 aspect-4/5 rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem]`}
+                                    className={`${fonts.base} w-full z-20 bg-[#011f38] p-6 aspect-4/5 text-sm sm:text-[16px] rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem]`}
                                 >
                                     {project.description}
                                 </div>
-                                <ul className='flex flex-row gap-5 font-mono text-gray-400 text-sm z-4'>
+                                <ul className='flex flex-row gap-5 font-mono text-gray-400 text-xs flex-wrap sm:text-sm z-4'>
                                     {project.techStack.map((tech, i) => (
                                         <li key={i}>{tech}</li>
                                     ))}
