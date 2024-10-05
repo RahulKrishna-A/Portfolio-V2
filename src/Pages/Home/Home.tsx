@@ -84,7 +84,7 @@ export default function Home() {
             >
                 <Contact fonts={fonts}/>
             </section>
-            <section className='absolute bottom-2 w-full flex flex-col gap-1 font-mono text-gray-200 text-center'>
+            {/* <section className='absolute bottom-2 w-full flex flex-col gap-1 font-mono text-gray-200 text-center'>
                 <p className='text-[.5rem]'>Built with &#128153; by Brad Tramel</p>
                 <p className='text-[.5rem]'>
                     Design inspired by
@@ -96,7 +96,7 @@ export default function Home() {
                         Brittany Chiang
                     </a>
                 </p>
-            </section>
+            </section> */}
         </main>
     </div>
 }

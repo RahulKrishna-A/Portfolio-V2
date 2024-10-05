@@ -50,7 +50,7 @@ const Hero = ({fonts}: {
                     I build cool Softwares.
                 </motion.h1>
             </div>
-            <motion.p variants={item} className={`md:max-w-[50%] ${fonts.base} pb-4`}>
+            <motion.p variants={item} className={`md:max-w-[55%] ${fonts.base} pb-4`}>
                 More formally, I&apos;m a <span className={"font-bold"}>Full Stack Developer</span> specializing in building engaging, and accessible web experiences. Currently, I&apos;m focused on building  tech solutions for fast-growing startups.
             </motion.p>
             <motion.div

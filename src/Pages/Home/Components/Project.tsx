@@ -3,6 +3,7 @@ import NumberedHeading from "./NumberedHeading.tsx";
 import cashflow from "../../../assets/Cashflow.png"
 import gestureLock from "../../../assets/GestureLock.png"
 import resumeBuilder from "../../../assets/ResumeBuilder.png"
+import { motion } from 'framer-motion';
 
 
 const Projects = ({fonts}: {
@@ -41,7 +42,12 @@ const Projects = ({fonts}: {
 
     ]
     return (
-        <div className='group flex flex-col min-h-screen justify-center mt-20'>
+        <motion.div
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true}}
+            transition={{ease: 'easeOut', duration: 1, delay: 0.75}}
+            className={`flex flex-col gap-6 ${fonts.base} group flex flex-col min-h-screen justify-center pt-10`}>
             <NumberedHeading number='.03' title="Things I've Built"/>
 
             {/* mobile screens */}
@@ -203,7 +209,7 @@ const Projects = ({fonts}: {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
