@@ -27,7 +27,7 @@ function App() {
                 <meta name="twitter:title" content="Rahul|Portfolio" />
                 <meta name="twitter:description" content="I'm Rahul, a Full Stack Developer specializing in building engaging, and accessible web experiences." />
                 <meta name="twitter:image" content="https://drive.google.com/file/d/12CxtMN599pQExFzWsppgPxIeeK_A4PC8/view?usp=sharing" />
-                <title>Dynamic Page Title</title>
+                <title>Rahul|Portfolio</title>
             </Helmet>
 
 
