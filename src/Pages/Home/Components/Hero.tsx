@@ -57,9 +57,9 @@ const Hero = ({fonts}: {
                 variants={item}
                 className='relative text-[#05BFDB] text-sm font-mono'
             >
-                <Button to={'#about'}>Learn More!</Button>
+                <Button to={'https://drive.google.com/file/d/1E-6aMTjop5v5xHwr33AXWGDTKDSyTuY3/view'}>View Resume!</Button>
                 <div className='absolute z-10 rounded-md whitespace-nowrap bg-[#05BFDB] px-8 py-3 top-0 left-0'>
-                    Learn More!
+                    Resume
                 </div>
             </motion.div>
         </motion.div>

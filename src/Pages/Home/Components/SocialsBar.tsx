@@ -1,5 +1,5 @@
 import {motion} from "framer-motion"
-import {FiGithub, FiLinkedin, FiMessageSquare, FiTwitter,} from 'react-icons/fi'
+import {FiGithub, FiLinkedin, FiMessageSquare, FiPenTool, FiTwitter,} from 'react-icons/fi'
 
 const SocialsSidebar = () => {
     return (
@@ -14,7 +14,8 @@ const SocialsSidebar = () => {
                     className='group '
                     title='GitHub'
                     aria-label='GitHub'
-                    href='https://www.github.com/'
+                    href='https://github.com/RahulKrishna-A'
+                    target='_blank'
                 >
                     <li className='text-gray-200 group-hover:text-[#05BFDB] hover:-translate-y-1 transition-transform  p-2'>
                         <FiGithub className='h-[20px] w-[20px]'/>
@@ -25,7 +26,8 @@ const SocialsSidebar = () => {
                     className='group '
                     title='Twitter'
                     aria-label='Twitter'
-                    href='https://twitter.com/'
+                    href='https://x.com/RahulKrishnaa28'
+                    target='_blank'
                 >
                     {' '}
                     <li className='text-gray-200 group-hover:text-[#05BFDB]  hover:-translate-y-1 transition-transform  p-2'>
@@ -37,10 +39,21 @@ const SocialsSidebar = () => {
                     className='group '
                     title='LinkedIn'
                     aria-label='LinkedIn'
-                    href='https://www.linkedin.com/in//'
+                    href='https://www.linkedin.com/in/rahul-krishnaa28/'
+                    target='_blank'
                 >
                     <li className='text-gray-200 group-hover:text-[#05BFDB] hover:-translate-y-1 transition-transform  p-2'>
                         <FiLinkedin className='h-[20px] w-[20px]'/>
+                    </li>
+                </a><a
+                    className='group '
+                    title='Medium'
+                    aria-label='Medium'
+                    href='https://medium.com/@rahulkrishna28'
+                    target='_blank'
+                >
+                    <li className='text-gray-200 group-hover:text-[#05BFDB] hover:-translate-y-1 transition-transform  p-2'>
+                        <FiPenTool className='h-[20px] w-[20px]'/>
                     </li>
                 </a>
 

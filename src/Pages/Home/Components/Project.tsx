@@ -16,7 +16,7 @@ const Projects = ({fonts}: {
             id: 'cash',
             description:
                 'CashFlow. A webapp simulating virtual money transfers online, along with User authentication, utilises sessions to ensure Atomicity and Isolation in Transactions. Follows \'Fixed-point\' representation to eliminate decimal errors in DBs.',
-            techStack: ['ReactJS', 'NodeJS', 'Express','MongoDB','tailwindcss','JWT'],
+            techStack: ['ReactJS', 'NodeJS', 'Express','MongoDB','tailwindcss'],
             link: 'https://cash-flow-rahul.vercel.app/',
             github: "https://github.com/RahulKrishna-A/CashFlow"
         },

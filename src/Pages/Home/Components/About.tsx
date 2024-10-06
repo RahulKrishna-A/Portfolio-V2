@@ -17,8 +17,8 @@ const About = ({fonts}: {
                 className={`flex flex-col gap-6 ${fonts.base}`}
             >
                 <div className='flex flex-col sm:flex-row gap-4'>
-                    <div className='flex flex-col gap-2 max-w-[600px] text-sm sm:text-xl leading-relaxed tracking-[.01rem] sm:gap-3'>
-                        <p className='font-light text-sm sm:text-[18px]'>
+                    <div   className='flex flex-col gap-2 max-w-[600px] text-sm sm:text-xl leading-relaxed tracking-[.02rem] sm:gap-3'>
+                        <p style={{lineHeight:1.5}} className='font-light text-sm sm:text-[18px] '>
                             Hey there! My name is Rahul and I enjoy creating things that live on the internet.
                             I've had the privilege of working with various high-growth <a
                             href="https://www.hosaksham.com"

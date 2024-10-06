@@ -125,6 +125,7 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
                     </a>
                 ))}
             </motion.ul>
+
             <button
                 className='absolute top-0 right-0 flex flex-row p-6 text-[#05BFDB] sm:hidden'
                 onClick={handleMobileMenu}
