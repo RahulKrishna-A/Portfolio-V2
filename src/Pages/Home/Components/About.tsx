@@ -1,6 +1,5 @@
 import {motion} from "framer-motion"
 import NumberedHeading from "./NumberedHeading.tsx";
-import { linearGradient } from "framer-motion/client";
 
 
 const About = ({fonts}: {

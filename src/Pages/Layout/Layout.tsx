@@ -5,7 +5,7 @@ import {Outlet} from "react-router-dom";
 // Create a context for active state
 export const ActiveContext = createContext({
     active: '',
-    setActive: (name: string) => {
+    setActive: () => {
     }
 });
 

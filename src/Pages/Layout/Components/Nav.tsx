@@ -63,7 +63,7 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
                     fontSize: 'clamp(14px, 5vw, 24px)',
                 }}
             >
-                B
+                R
             </div>
             <motion.ul
                 variants={motionContainer}

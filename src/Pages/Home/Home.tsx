@@ -1,4 +1,4 @@
-import {useContext, useEffect, useRef} from 'react'; // Add this import
+import {useContext, useEffect} from 'react'; // Add this import
 import EmailSidebar from "./Components/EmailsSideBae.tsx";
 import SocialsSidebar from "./Components/SocialsBar.tsx";
 import Hero from "./Components/Hero.tsx";
@@ -26,7 +26,6 @@ export default function Home() {
                 }
             });
         }, {threshold: 0.5}); // Adjust threshold as needed
-
         sections.forEach(section => {
             observer.observe(section);
         });
