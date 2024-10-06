@@ -35,7 +35,7 @@ const Contact = ({fonts}: {
                             className='group'
                             title='Linkedin'
                             aria-label='LinkedIn'
-                            href='https://www.github.com/'
+                            href='https://www.linkedin.com/in/rahul-krishnaa28/'
                         >
                             <span
                                 className='text-gray-200 hover:text-[#05BFDB] hover:-translate-y-1 transition-transform p-2'>
@@ -47,7 +47,7 @@ const Contact = ({fonts}: {
                             className='group'
                             title='Twitter'
                             aria-label='Twitter'
-                            href='https://twitter.com/'
+                            href='https://x.com/RahulKrishnaa28'
                         >
                             <span className='text-gray-200 hover:text-[#05BFDB] hover:-translate-y-1 transition-transform p-2'>
                                 <FiTwitter className='h-[20px] w-[20px]'/>
