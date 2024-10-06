@@ -1,5 +1,5 @@
 import Button from "../../Layout/Components/Button.tsx";
-import {FiGithub, FiLinkedin, FiMessageSquare, FiTwitter} from "react-icons/fi";
+import {FiLinkedin, FiTwitter} from "react-icons/fi";
 
 const Contact = ({fonts}: {
     fonts: { accent: string; primaryHeading: string; secondaryHeading: string; base: string }
@@ -16,10 +16,11 @@ const Contact = ({fonts}: {
                     anything.
                 </p>
                 <div className={"flex flex-row gap-4 mt-4 "}> {/* Added gap for spacing */}
-                    <div>
+                    <div >
                         <Button
+                            id={"tallyButton"}
                             to={
-                                'mailto:bradtramel@gmail.com?&subject=Hey Brad&body=Cool portfolio website!'
+                                '#tally-open=3EJ0Vr&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=4500'
                             }
                         >
                             Say Hello

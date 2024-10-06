@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react'; // Add this import
+import {useContext, useEffect, useRef} from 'react'; // Add this import
 import EmailSidebar from "./Components/EmailsSideBae.tsx";
 import SocialsSidebar from "./Components/SocialsBar.tsx";
 import Hero from "./Components/Hero.tsx";
@@ -15,9 +15,13 @@ export default function Home() {
 
     useEffect(() => {
         const sections = document.querySelectorAll('.sectionObserve');
+        const tallyButton = document.getElementById('tallyButton');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    if(entry.target.id==="contact"){
+                        tallyButton?.click()
+                    }
                     setActive(entry.target.id);
                 }
             });
@@ -30,6 +34,9 @@ export default function Home() {
         return () => {
             sections.forEach(section => {
                 observer.unobserve(section);
+                // if(section==="contact"){
+                //
+                // }
             });
         };
     }, []);
@@ -82,7 +89,7 @@ export default function Home() {
 
                 className='sectionObserve mt-[1px] min-h-[800px] h-[101vh] w-full bg-[#0B192E] bg-grid-small-[#efefef]/5 px-[2rem] sm:px-[5%] lg:px-[15%]'
             >
-                <Contact fonts={fonts}/>
+                <Contact fonts={fonts} />
             </section>
             {/* <section className='absolute bottom-2 w-full flex flex-col gap-1 font-mono text-gray-200 text-center'>
                 <p className='text-[.5rem]'>Built with &#128153; by Brad Tramel</p>

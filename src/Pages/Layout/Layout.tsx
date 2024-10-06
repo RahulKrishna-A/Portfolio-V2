@@ -30,7 +30,7 @@ export default function Layout() {
 
     const [active, setActive] = useState(navItems[0].name)
 
-    console.log(active)
+
     return (
         <ActiveContext.Provider value={{active, setActive}}>
             <div >
