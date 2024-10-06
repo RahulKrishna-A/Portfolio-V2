@@ -13,7 +13,7 @@ const MobileNav = ({navItems, handleMobileMenu}: {
         name: string;
         link: string;
         key: string;
-    }>, handleMobileMenu: never
+    }>, handleMobileMenu: ()=>void
 }) => {
     // animation refs & controls
     // const { ref: navRef, controls: navControls } = useOnInView()
