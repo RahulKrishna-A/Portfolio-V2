@@ -6,7 +6,7 @@ const Contact = ({fonts}: {
 }) => {
     return (
         <div className='h-full w-full flex flex-col items-center justify-center gap-4'>
-            <div className='group w-1/2 flex flex-col items-start justify-start gap-6 text-left'>
+            <div className='group sm:w-1/2 flex flex-col items-start justify-start gap-6 text-left'>
                 <h1 className={`${fonts.accent}`}>04. What&apos;s Next?</h1>
                 <h2 className={`${fonts.primaryHeading} text-[2.25rem]`}>
                     Get in Touch
@@ -15,7 +15,7 @@ const Contact = ({fonts}: {
                     My inbox is open. I&apos;m always happy to chat about code, design, or
                     anything.
                 </p>
-                <div className={"flex flex-row gap-4 mt-4 "}> {/* Added gap for spacing */}
+                <div className={"flex flex-row gap-2 sm:gap-4 mt-4 "}> {/* Added gap for spacing */}
                     <div >
                         <Button
                             id={"tallyButton"}
