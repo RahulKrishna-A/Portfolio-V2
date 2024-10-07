@@ -71,7 +71,7 @@ export default function Work({fonts}: {
                                 Feb 2024 - June 2024
                             </h3>
 
-                            <p className="font-semibold text-sm text-gray-300">
+                            <p className="font-semibold  text-sm text-gray-300">
                                 Software Developer Intern at Klaimz (Stealth Startup)
                             </p>
 

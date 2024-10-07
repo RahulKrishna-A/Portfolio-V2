@@ -58,7 +58,7 @@ const Projects = ({fonts}: {
                             <div className={`flex flex-col gap-4 h-[80%] w-full`}>
                                 <div className={`flex flex-col gap-1`}>
                                     <div className={fonts.accent}>Featured Project</div>
-                                    <div className={`${fonts.primaryHeading} text-2xl`}>
+                                    <div className={`${fonts.primaryHeading} text-xl`}>
                                         {project.title}
                                     </div>
                                 </div>
@@ -149,12 +149,12 @@ const Projects = ({fonts}: {
                             >
                                 <div className={`flex flex-col gap-1 ${i % 2 !== 0 ? 'items-end' : 'items-start'}`}>
                                     <div className={fonts.accent}>Featured Project</div>
-                                    <div className={`${fonts.primaryHeading} text-2xl`}>
+                                    <div className={`${fonts.primaryHeading}  text-lg sm:text-2xl`}>
                                         {project.title}
                                     </div>
                                 </div>
                                 <div
-                                    className={`${fonts.base} w-full lg:w-[110%] ${i % 2 !== 0 ? 'text-right' : 'text-left'} z-20 bg-[#011f38] p-6 aspect-4/5 rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem]`}
+                                    className={`${fonts.base} w-full lg:w-[110%] ${i % 2 !== 0 ? 'text-right' : 'text-left'} z-20 bg-[#011f38] p-6 aspect-4/5 rounded-md shadow-md shadow-black/70 leading-relaxed tracking-[.01rem] text-sm sm:text-[16px]`}
                                 >
                                     {project.description}
                                 </div>

@@ -43,14 +43,14 @@ const Hero = ({fonts}: {
                     fontSize: 'clamp(40px, 9vw, 64px)',
                 }}
             >
-                <motion.h1 variants={item} className={fonts.primaryHeading}>
+                <motion.h1  variants={item} className={fonts.primaryHeading}>
                     Rahul Krishna
                 </motion.h1>
                 <motion.h1 variants={item} className={fonts.secondaryHeading}>
                     I build cool Softwares.
                 </motion.h1>
             </div>
-            <motion.p variants={item} className={`md:max-w-[55%] ${fonts.base} pb-4`}>
+            <motion.p variants={item} className={`md:max-w-[55%] ${fonts.base} pb-4 text-[14px] sm:text-[16px] `}>
                 More formally, I&apos;m a <span className={"font-bold"}>Full Stack Developer</span> specializing in building engaging, and accessible web experiences. Currently, I&apos;m focused on building  tech solutions for fast-growing startups.
             </motion.p>
             <motion.div
@@ -58,7 +58,7 @@ const Hero = ({fonts}: {
                 className='relative text-[#05BFDB] text-sm font-mono'
             >
                 <Button to={'https://drive.google.com/file/d/1E-6aMTjop5v5xHwr33AXWGDTKDSyTuY3/view'}>View Resume!</Button>
-                <div className='absolute z-10 rounded-md whitespace-nowrap bg-[#05BFDB] px-8 py-3 top-0 left-0'>
+                <div className='absolute z-10 rounded-md whitespace-nowrap bg-[#05BFDB] px-6 py-0 top-0 left-0'>
                     Resume
                 </div>
             </motion.div>
