@@ -32,7 +32,7 @@ const Projects = ({fonts}: {
         {
             image: resumeBuilder,
             id: 'resumeb',
-            title: "Real-time Weather Application",
+            title: "Resume Builder",
             description:"A web App for Resume Generation using ReactJS and CSS to facilitate the seamless creation of professional resume. Implemented a user-friendly interface that allows users to effortlessly download resumes in PDF format.",
             techStack: ['ReactJs', 'CSS'],
             link: 'https://resume-builder-rahul.netlify.app/',

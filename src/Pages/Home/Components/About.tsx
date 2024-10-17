@@ -29,7 +29,7 @@ const About = ({fonts}: {
                             perception</a> .
                         </p>
                         <p className='font-light text-sm sm:text-[18px]'>
-                            I proactively write technical blogs <a
+                            I actively write technical blogs <a
                             href="https://medium.com/@rahulkrishna28"
                             className={"cursor-pointer underline underline-offset-4"} target="_blank"
                             rel="noopener">here</a>.
