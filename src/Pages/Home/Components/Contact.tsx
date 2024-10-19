@@ -1,5 +1,6 @@
 import Button from "../../Layout/Components/Button.tsx";
-import {FiLinkedin, FiTwitter} from "react-icons/fi";
+import {FiLinkedin} from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = ({fonts}: {
     fonts: { accent: string; primaryHeading: string; secondaryHeading: string; base: string }
@@ -50,7 +51,7 @@ const Contact = ({fonts}: {
                             href='https://x.com/RahulKrishnaa28'
                         >
                             <span className='text-gray-200 hover:text-[#05BFDB] hover:-translate-y-1 transition-transform p-2'>
-                                <FiTwitter className='h-[20px] w-[20px]'/>
+                                <FaXTwitter className='h-[20px] w-[20px]'/>
                             </span>
                         </a>
                     </div>

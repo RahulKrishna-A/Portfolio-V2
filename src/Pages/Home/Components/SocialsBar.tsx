@@ -1,6 +1,7 @@
 import {motion} from "framer-motion"
-import {FiGithub, FiLinkedin, FiMessageSquare, FiPenTool, FiTwitter,} from 'react-icons/fi'
-
+import {FiGithub, FiLinkedin, FiMessageSquare,} from 'react-icons/fi'
+import { FaXTwitter } from "react-icons/fa6";
+import { FaMediumM } from "react-icons/fa";
 const SocialsSidebar = () => {
     return (
         <motion.div
@@ -31,7 +32,7 @@ const SocialsSidebar = () => {
                 >
                     {' '}
                     <li className='text-gray-200 group-hover:text-[#05BFDB]  hover:-translate-y-1 transition-transform  p-2'>
-                        <FiTwitter className='h-[20px] w-[20px]'/>
+                        <FaXTwitter className='h-[20px] w-[20px]'/>
                     </li>
                 </a>
 
@@ -53,7 +54,7 @@ const SocialsSidebar = () => {
                     target='_blank'
                 >
                     <li className='text-gray-200 group-hover:text-[#05BFDB] hover:-translate-y-1 transition-transform  p-2'>
-                        <FiPenTool className='h-[20px] w-[20px]'/>
+                        <FaMediumM className='h-[20px] w-[20px]'/>
                     </li>
                 </a>
 
