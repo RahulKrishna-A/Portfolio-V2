@@ -1,12 +1,16 @@
-import {createContext, useState} from "react"; // Add this import
+import {createContext, useState, Dispatch, SetStateAction} from "react"; // Add this import
 import Nav from "./Components/Nav.tsx";
 import {Outlet} from "react-router-dom";
 
 // Create a context for active state
-export const ActiveContext = createContext({
+type ActiveContextType = {
+    active: string;
+    setActive: Dispatch<SetStateAction<string>>;
+}
+
+export const ActiveContext = createContext<ActiveContextType>({
     active: '',
-    setActive: () => {
-    }
+    setActive: () => '',
 });
 
 export default function Layout() {
@@ -21,11 +25,11 @@ export default function Layout() {
     ]
 
     const fonts = {
-        accent: 'text-[#05BFDB] text-sm font-mono',
+        accent: 'text-[#05BFDB] text-xs font-mono',
         primaryHeading:
             'whitespace-nowrap text-gray-200 font-bold leading-tight font-sans',
         secondaryHeading: 'text-gray-400 font-bold leading-tight font-sans',
-        base: 'text-gray-400 text-base font-sans',
+        base: 'text-gray-400 text-sm font-sans',
     }
 
     const [active, setActive] = useState(navItems[0].name)

@@ -16,8 +16,8 @@ const About = ({fonts}: {
                 className={`flex flex-col gap-6 ${fonts.base}`}
             >
                 <div className='flex flex-col sm:flex-row gap-4'>
-                    <div   className='flex flex-col gap-2 max-w-[600px] text-sm sm:text-xl leading-relaxed tracking-[.02rem] sm:gap-3'>
-                        <p style={{lineHeight:1.5}} className='font-light text-sm sm:text-[18px] '>
+                    <div   className='flex flex-col gap-2 max-w-[600px] text-xs sm:text-lg leading-relaxed tracking-[.02rem] sm:gap-3'>
+                        <p style={{lineHeight:1.5}} className='font-light text-xs sm:text-[16px] '>
                             Hey there! My name is Rahul and I enjoy creating things that live on the internet.
                             I've had the privilege of working with various high-growth <a
                             href="https://www.hosaksham.com"
@@ -28,13 +28,13 @@ const About = ({fonts}: {
                             into <a>user
                             perception</a> .
                         </p>
-                        <p className='font-light text-sm sm:text-[18px]'>
+                        <p className='font-light text-xs sm:text-[16px]'>
                             I actively write technical blogs <a
                             href="https://medium.com/@rahulkrishna28"
                             className={"cursor-pointer underline underline-offset-4"} target="_blank"
                             rel="noopener">here</a>.
                         </p>
-                        <p className='font-light text-sm sm:text-[18px]'>
+                        <p className='font-light text-xs sm:text-[16px]'>
                             Here are a few technologies I’ve been working with recently:
                         </p>
 
@@ -43,7 +43,7 @@ const About = ({fonts}: {
 
                 </div>
 
-                <div className="space-y-4  text-gray-300 sm:text-[15px] text-xs">
+                <div className="space-y-4  text-gray-300 sm:text-[14px] text-xs">
 
                     <dl className="flex flex-col sm:flex-row gap-1">
                         <dt className="min-w-40">

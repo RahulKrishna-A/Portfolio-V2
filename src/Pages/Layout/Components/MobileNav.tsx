@@ -20,12 +20,12 @@ const MobileNav = ({navItems, handleMobileMenu}: {
 
     const textStyle =
 
-        'font-mono font-normal font-extrabold text-[20px] no-underline hover:no-underline'
+        'font-mono font-normal font-extrabold text-[18px] no-underline hover:no-underline'
 
     return (
         <motion.nav
             // ref={navRef}
-            className='z-front   fixed bg-[#0B192E] top-10 left-0 w-full flex h-full items-center justify-center  p-8 font-futuraCond text-2xl font-extrabold uppercase italic tracking-wider text-wolvesFrost'
+            className='z-front   fixed bg-[#0B192E] top-10 left-0 w-full flex h-full items-center justify-center  p-8 font-futuraCond text-xl font-extrabold uppercase italic tracking-wider text-wolvesFrost'
             initial='hidden'
         >
             <button

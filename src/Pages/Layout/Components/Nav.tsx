@@ -60,7 +60,7 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
             <div
                 className={fonts.accent}
                 style={{
-                    fontSize: 'clamp(14px, 5vw, 24px)',
+                    fontSize: 'clamp(12px, 4vw, 20px)',
                 }}
             >
                 R
@@ -82,7 +82,7 @@ const Nav = ({ fonts, navItems, active, setActive }: NavProps) => {
                             variants={child}
                             className={`${fonts.accent} font-sans no-underline hover:no-underline hover: px-4`}
                             style={{
-                                fontSize: 'clamp(10px, 1.5vw, 14px)',
+                                fontSize: 'clamp(9px, 1.3vw, 13px)',
                             }}
                         >
                             {active === item.link && (

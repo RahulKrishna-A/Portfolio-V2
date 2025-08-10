@@ -22,7 +22,7 @@ export default function Home() {
                     if(entry.target.id==="contact"){
                         tallyButton?.click()
                     }
-                    setActive(entry.target.id);
+                    setActive(entry.target.id as string);
                 }
             });
         }, {threshold: 0.5}); // Adjust threshold as needed
@@ -41,11 +41,11 @@ export default function Home() {
     }, []);
 
     const fonts = {
-        accent: 'text-[#05BFDB] text-sm font-mono',
+        accent: 'text-[#05BFDB] text-xs font-mono',
         primaryHeading:
             'whitespace-nowrap text-gray-200 font-bold leading-tight font-sans',
         secondaryHeading: 'text-gray-400 font-bold leading-tight font-sans',
-        base: 'text-gray-400 text-base font-sans',
+        base: 'text-gray-400 text-sm font-sans',
     }
 
     return <div className='min-h-screen flex bg-[#0B192E] bg-grid-small-[#efefef]/5'>

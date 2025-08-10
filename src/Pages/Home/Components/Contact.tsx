@@ -9,7 +9,7 @@ const Contact = ({fonts}: {
         <div className='h-full w-full flex flex-col items-center justify-center gap-4'>
             <div className='group sm:w-1/2 flex flex-col items-start justify-start gap-6 text-left'>
                 <h1 className={`${fonts.accent}`}>04. What&apos;s Next?</h1>
-                <h2 className={`${fonts.primaryHeading} text-[2.25rem]`}>
+                <h2 className={`${fonts.primaryHeading} text-[2rem]`}>
                     Get in Touch
                 </h2>
                 <p className={`${fonts.base} leading-relaxed tracking-[.01rem]`}>

@@ -40,7 +40,7 @@ const Hero = ({fonts}: {
             </motion.p>
             <div
                 style={{
-                    fontSize: 'clamp(40px, 9vw, 64px)',
+                    fontSize: 'clamp(36px, 8vw, 56px)',
                 }}
             >
                 <motion.h1  variants={item} className={fonts.primaryHeading}>
@@ -50,7 +50,7 @@ const Hero = ({fonts}: {
                     I build cool Softwares.
                 </motion.h1>
             </div>
-            <motion.p variants={item} className={`md:max-w-[55%] ${fonts.base} pb-4 text-[14px] sm:text-[16px] `}>
+            <motion.p variants={item} className={`md:max-w-[55%] ${fonts.base} pb-4 text-[13px] sm:text-[15px] `}>
                 More formally, I&apos;m a <span className={"font-bold"}>Full Stack Developer</span> specializing in building engaging, and accessible web experiences. Currently, I&apos;m focused on building  tech solutions for fast-growing startups.
             </motion.p>
             <motion.div

@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
   max-width: 100vw;
   line-height: 1.15;
@@ -421,7 +421,7 @@ button {
   }
 
   p {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
   /* gifs! */
   .active {
